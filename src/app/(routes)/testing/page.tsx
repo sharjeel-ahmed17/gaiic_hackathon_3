@@ -77,29 +77,30 @@
 // 888888
 // import { productData } from '@/app/data/productData'
 import GridProducts from '@/components/GridProducts'
+import { getAllProducts } from '@/services/products';
 import React from 'react'
 
 
 
-const getAllProducts = async ()=>{
-  try {
-    const response = await fetch('https://dummyjson.com/products');
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    // console.log(response);
+// const getAllProducts = async ()=>{
+//   try {
+//     const response = await fetch('https://dummyjson.com/products');
+//     if (!response.ok) {
+//       throw new Error(`HTTP error! status: ${response.status}`);
+//     }
+//     // console.log(response);
     
-    const data = await response.json();
-    // console.log(data.products);
-    return data.products
-    // productData.products = data;
-    // console.log(productData.products);
-  } catch (error) {
-    console.log(error);
+//     const data = await response.json();
+//     // console.log(data.products);
+//     return data.products
+//     // productData.products = data;
+//     // console.log(productData.products);
+//   } catch (error) {
+//     console.log(error);
     
     
-  }
-}
+//   }
+// }
 const Testing = async () => {
   // console.log(productData.products);
   const products = await getAllProducts();
