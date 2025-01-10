@@ -4,7 +4,7 @@ interface IProduct {
 }
 
 const ProductCard = ({product } : IProduct) => {
-    console.log(product);
+    // console.log(product);
     
   return (
     <div>
