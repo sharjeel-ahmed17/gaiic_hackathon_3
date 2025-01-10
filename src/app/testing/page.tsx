@@ -1,8 +1,12 @@
+import { Button } from "@/components/ui/button"
 
 
 const Testing = () => {
   return (
-    <div>Testing</div>
+    <>
+    {/* button  */}
+    <Button>hello world</Button>
+    </>
   )
 }
 
