@@ -103,7 +103,7 @@ const getAllProducts = async ()=>{
 const Testing = async () => {
   // console.log(productData.products);
   const products = await getAllProducts();
-  console.log('>>>>products',products);
+  // console.log('>>>>products',products);
   
   return (
     <div>
