@@ -2,7 +2,7 @@
 
 const Carousel = () => {
   return (
-    <div>Carousel</div>
+    <div className="">Carousel</div>
   )
 }
 
